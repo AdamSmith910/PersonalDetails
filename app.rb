@@ -27,5 +27,10 @@ get '/fav_nums' do
 end
 
 post '/fav_nums' do
-  "Hello World"
+  name = params[:name]
+  age = params[:age]
+  fav1 = params[:user_fav1]
+  fav2 = params[:user_fav2]
+  fav3 = params[:user_fav3]
+  "Hello #{name}, your favorite number are #{fav1},#{fav2},#{fav3}!"
 end
