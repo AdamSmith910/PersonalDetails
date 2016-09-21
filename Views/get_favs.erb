@@ -1,0 +1,9 @@
+Hello <%= name %>, what are your 3 favorite numbers?
+<form method = "post" action = "/fav_nums">
+	<input type = "number" max = 9 min = 0 name = "user_fav1">
+	<input type = "number" max = 9 min = 0 name = "user_fav2">
+	<input type = "number" max = 9 min = 0 name = "user_fav3">
+	<input type ="text" name ="name" value =<%=name%> hidden>
+	<input type ="text" age ="age" value =<%=age%> hidden>
+	<input type ="submit">
+</form>
